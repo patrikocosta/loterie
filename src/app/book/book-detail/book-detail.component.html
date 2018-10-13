@@ -1,0 +1,25 @@
+<br>
+<app-card>
+    <div header>
+        titre : <div *ngIf="livredetail">{{livredetail.titre}}</div>
+        <br>
+    </div>
+
+    <div body>
+        auteur : <div *ngIf="livredetail">{{livredetail.auteur}}</div>
+    </div>
+    <div center>
+        -------------------------------
+        <br>
+        -------------------------------
+    </div>
+</app-card>
+<br>
+
+
+
+<button (click)="supprimerLivre(livredetail.id)" >Supprimer le livre</button>
+
+<br>
+<br>
+<a href="/">Retour</a>

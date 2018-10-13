@@ -1,0 +1,14 @@
+{
+  "livres": [
+    {
+      "id": 1,
+      "titre": "La faim du json !!!",
+      "auteur": "rene service"
+    },
+    {
+      "id": 2,
+      "titre": "La faim du service ajax !!!",
+      "auteur": "rene service 2-zzz"
+    }
+  ]
+}

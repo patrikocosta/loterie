@@ -1,0 +1,24 @@
+new-book works!
+<br><br><br>
+<form (ngSubmit)="onSubmit()" #articleForm="ngForm">
+  <input id="titre" name="titre" [(ngModel)]="livre.titre" required minlength="4">
+ <!-- <input id="auteur" name="auteur" [(ngModel)]="livre.auteur" required> -->
+ <br>
+  
+  Liste des auteurs
+
+   <select id="auteurMenu" name="auteurMenu" [(ngModel)]="livre.auteur">
+
+      <!-- <option ng-repeat="auteur in auteurs" value="{{auteur.id}}">{{auteur.nom}}</option> -->
+
+     <option *ngFor="let l of auteurs" value={{l.nom}} > {{l.nom}}</option> 
+
+
+  </select>
+
+
+
+  <br>
+  <button type="submit" [disabled]="!articleForm.form.valid">Submit</button>
+
+</form>

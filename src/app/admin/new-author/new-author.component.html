@@ -1,0 +1,15 @@
+
+
+<form [formGroup]="auteurForm" (ngSubmit)="onSubmit()"  >
+
+
+  <label for="nom">nom</label>
+  <input type="text" name="nom" formControlName="nom">
+  
+   <app-form-error [nom]="nom" ></app-form-error>
+
+  <button type="submit" [disabled]="auteurForm.invalid">Valider</button>
+
+</form>
+
+
